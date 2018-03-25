@@ -1,0 +1,32 @@
+<div align="center">
+    <H1>The Famous Events In Kiel</H1>
+</div>
+
+<div class = "">
+
+    <% for(var i=0; i<data.length; i++) { %>
+
+
+    <div class = "row">
+
+        <div class = "col-md-6">
+
+            <img src="/images/events/<%= data[i].ImageName%>"  height="400" width="600">
+
+        </div>
+
+        <div class = "col-md-5 col-md-offset-1">
+
+            Name: <%= data[i].Name %>
+            <br>
+            Location: <%= data[i].Location %>
+            <br>
+            Dates & Time: <%=data[i].Dates%>
+            <br>
+            Description: <%=data[i].Description %>
+        </div>
+
+    </div>
+    <br />
+    <% } %>
+</div>

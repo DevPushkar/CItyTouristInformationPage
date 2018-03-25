@@ -1,0 +1,140 @@
+<style>
+
+#hr_styling hr{
+
+    margin:10px;
+}
+    .footer_style{
+        background-color: #6F7D6F;
+        margin-top: 10px;
+        padding: 10px;
+        
+    }
+    ._email{
+        padding: 5px;
+    }
+    .footer_style a {
+        color: #fff;
+    }
+    .BTN{
+        background-color:#6272FF;
+        margin-top: 10px;
+    }
+</style>
+
+<footer>
+    <div class="footer_style" id="hr_styling">
+
+        <div class="row">
+
+            <div class="col-md-2 col-sm-3 col-xs-3">
+            </div>
+
+            <div class="col-xs-4 col-md-2" >
+                <small>
+                    <a href="home">Home</a> <br><hr >
+                    <a href="about">About Us</a><br><hr >
+                    <a href="#">Events</a><br><hr >
+                    <a href="#">Tourist Places</a><br><hr >
+                    <a href="#">Services</a><br><hr >
+                    <a href="#">Gallery</a><br><hr >
+                    <a href="#">Contact Us</a><br><hr >
+                </small>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+                <ul class="">
+                    <h4>University of Applied Sciences</h4>
+                    <small>
+                        <li>Sokratesplatz 1	24149 Kiel, Germany</li><hr >
+                        <li>Phone: +49 (0) 431 210-0 </li><hr >
+                        <li>Fax: +49 (0) 431 210-1900	</li><hr >
+                        <li>E-Mail: info (at) fh-kiel.de</li><hr >
+                    </small>
+                </ul>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+                <h5>Subscribe to our Latest News</h5>
+                <form id="register-newsletter">
+                    <input class="_email" type="text" name="newsletter" required="" placeholder="Enter your email address">
+                    <br>
+                    <input type="submit" class="BTN" value="SUBSCRIBE">
+                </form>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-xs-12 col-md-12 col-sm-12 ">
+                <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top scroll_up" role="button" title="Click to return on the top page"
+                   data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="row copyright_design">
+        <div class="col-md-10 col-sm-5 col-xs-6 ">
+            Copyright 2017 &copy; Agile Software development Team - Powered by FH-Kiel 2017
+        </div>
+
+        <div class="col-xs-4 col-md-2 col-sm-5">
+            <small>
+                <a href="#">Contact Us  ||</a>
+                <a href="#">My Account</a>
+            </small>
+        </div>
+    </div>
+
+
+</footer>
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+
+    <div class="container modal-content animate">
+        <div class="col-md-6">
+            <div id="logbox">
+                <form id="signup" method="post" action="/users/signup">
+                    <h1>create an account</h1>
+
+                    <input name="F_Name" type="text"  placeholder="Enter yout first name"  autofocus="autofocus" required="required" class="form-control"/>
+                    <input name="L_Name" type="text"  placeholder="Enter yout last name"  autofocus="autofocus" required="required" class="form-control"/>
+                    <input name="Email" type="email"  placeholder="Enter yout valid Email"  autofocus="autofocus" required="required" class="form-control"/>
+                    <input name="Password" type="password" placeholder="Choose a password" required="required" class="form-control"/>
+                    <input name="PasswordConfirm" type="password" placeholder="Confirm password" required="required" class="form-control"/>
+
+                    <input type="submit" value="Sign me up!" class="btn btn-primary"/>
+
+                </form>
+            </div>
+        </div>
+        <!--col-md-6-->
+
+        <div class="col-md-6">
+            <div id="logbox">
+                <form id="signup" method="post" action="/users/signin">
+                    <h1>account login</h1>
+                    <input name="email" type="email" placeholder="enter your email" required="required"  class="form-control"/>
+                    <input name="password" type="password" placeholder="enter your password" required="required" class="form-control"/>
+                    <input type="submit" value="Sign me in!" class="btn btn-primary"/>
+                    <div class="text-center">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

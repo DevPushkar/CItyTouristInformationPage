@@ -1,0 +1,308 @@
+<title>Kiel Explore</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="stylesheets/bootstrap/css/bootstrap.css"></script>
+<style>
+
+    <!-- Moved from Template Start -->
+
+    /* Signup model form */
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+    }
+
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn,.signupbtn {float:left;width:50%}
+
+    /* Add padding to container elements */
+    .container {
+        padding: 16px;
+
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+        position: relative;
+        right: 1px;
+        top: 1px;
+        color: #000;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+        .cancelbtn, .signupbtn {
+            width: 100%;
+        }
+    }
+    ::selection {
+        background-color: #b5e2e7;
+    }
+
+    ::-moz-selection {
+        background-color: #8ac7d8;
+    }
+
+    .container {
+        display: -webkit-flex;
+        display: flex;
+        height: 100%;
+    }
+
+    #logbox {
+        padding: 10px;
+        margin: 50px auto;
+        width: 340px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 175%;
+        color: #757575;
+        font-weight: 300;
+    }
+
+    h1, input {
+        font-family: "Open Sans", Helvetica, sans-serif;
+    }
+
+    .input {
+        width: 75%;
+        height: 50px;
+        display: block;
+        margin: 0 auto 15px;
+        padding: 0 15px;
+        border: none;
+        border-bottom: 2px solid #ebebeb;
+    }
+    .input:focus {
+        outline: none;
+        border-bottom-color: #3CC !important;
+    }
+    .input:hover {
+        border-bottom-color: #dcdcdc;
+    }
+    .input:invalid {
+        box-shadow: none;
+    }
+
+    .pass:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px white inset;
+    }
+
+    .inputButton {
+        position: relative;
+        width: 85%;
+        height: 50px;
+        display: block;
+        margin: 30px auto 30px;
+        color: white;
+        background-color: #3CC;
+        border: none;
+        -webkit-box-shadow: 0 5px 0 #2CADAD;
+        -moz-box-shadow: 0 5px 0 #2CADAD;
+        box-shadow: 0 5px 0 #2CADAD;
+    }
+    .inputButton:hover {
+        top: 2px;
+        -webkit-box-shadow: 0 3px 0 #2CADAD;
+        -moz-box-shadow: 0 3px 0 #2CADAD;
+        box-shadow: 0 3px 0 #2CADAD;
+    }
+    .inputButton:active {
+        top: 5px;
+        box-shadow: none;
+    }
+    .inputButton:focus {
+        outline: none;
+    }
+
+
+
+
+    <!-- Moved from Template Ends -->
+
+
+
+
+.nav-row-design{
+    float: right;
+}
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: #463cff;
+        font-color: #1c7430;
+
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+        color: #fff;
+        padding: 0px;
+
+    }
+
+    .header-color{
+        color: #fff;
+    }
+
+    .scroll_up{
+        float: right;
+        margin: 0px;
+    }
+    .copyright_design{
+        margin-top: 5px;
+        color: rgba(30,41,30,0.67);
+        padding: 5px;
+    }
+    .container-fluid{
+        background-color: #3e4444;
+        padding-top: 5px;
+    }
+
+.design{
+    background-color: #fff;
+    padding-right: 15px;
+}
+
+.design_2 li{
+    color: #060406;
+}
+ul li a:hover{
+    color: #1C7A07;
+}
+
+
+</style>
+
+</head>
+<body style="padding:10px 60px">
+
+<div class="container-fluid row design">
+    <div class="navbar-header col-md-4">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a><img class="logo navbar-brand" href="home" width="100px" height="200px" src="/images/home_images/kiel_logo.jpg" alt="Logo"></a>
+    </div>
+
+    <div class="collapse navbar-collapse col-md-8 nav-row-design" id="myNavbar">
+
+
+        <ul class="nav navbar-nav design_2">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/famousplaces">Tourist Places</a></li>
+            <li><a href="/hotel">Hotel Booking</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right design_2">
+
+            <li>
+                <% if(locals.session.F_Name == null){ %>
+
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up/ Sign in</button>
+                <% } else{ %>
+                <a href="/users/signout"><span class="glyphicon glyphicon-log-in"></span> Sign out</a>
+                <% } %>
+
+            </li>
+
+            <!-- language button-->
+            <li style="font-size: medium ; padding: .5em" > Languages:
+
+                <select name="languages">
+
+                    <option value="English">English</option>
+                    <option value="German">German</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                </select>
+
+            </li>
+
+            <!-- Search-->
+            <li style="font-size: medium ; padding: .5em">
+
+                <form class="form-inline">
+                    <input class="form-control searchBox mr-sm-2" type="search" placeholder="Search for...">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                </form>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
